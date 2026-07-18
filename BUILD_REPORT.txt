@@ -1,18 +1,17 @@
-Lovec vltavínů Reborn 5.1 — Real Localities
+Lovec vltavínů Reborn 5.4
 
-Static validation:
-- JavaScript syntax: OK (node --check)
-- Missing HTML element IDs: 0
-- Duplicate named functions: 0
-- Required reference environments: 4/4
-- Offline music files: 5
-- Build size: 8,915,731 B
-
-Environment mapping:
-- Chlum: open agricultural field, distant treeline, large excavation pits, soil heaps, stubble
-- Locenice: sparse pine forest, sandy mounds, sandy pits, fallen trunks
-- Besednice: disturbed mining ground, excavators, crawler tracks, earth banks, mining pits
-- Slavie: historic facade with pediment plus modern white/glass annex and plaza
-
-Limitations:
-- The automated browser in this environment was blocked by administrator policy, so final visual confirmation must be performed after GitHub Pages deployment on the target iPhone.
+VALIDATION
+HTML element references: OK
+robbery alert HTML: OK
+robbery function: OK
+robbery called after profile: OK
+three boss phases: OK
+boss dash: OK
+stolen gem visible: OK
+player after darkness: OK
+player excluded from world sorting: OK
+robbery CSS: OK
+cache v5-4: OK
+Audio tracks validated: 5
+Build size: 8968533 B
+Overall static validation: OK

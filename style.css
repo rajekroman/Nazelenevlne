@@ -89,3 +89,51 @@ button{-webkit-tap-highlight-color:transparent}
   .hint{bottom:calc(88px + var(--safe-b))}.combo{top:calc(84px + var(--safe-t))}
 }
 @media(prefers-reduced-motion:reduce){.action-button.ready,.danger-meter.detected,.boss-hud.enraged em,#app.danger-state:after{animation:none!important}.boss-intro{transition:none}}
+
+
+/* v5.2 — Na Zelené Vlně branding + clearer brief */
+:root{--brandPurple:#32036b;--brandPurple2:#4b1488;--brandMint:#7fe3bf;--brandMint2:#bdf3dd}
+#titleScreen{background:linear-gradient(180deg,var(--brandPurple) 0 34%,var(--brandMint) 34% 100%)!important;grid-template-columns:1fr!important}
+#titleScreen .title-art{display:none!important}
+#titleScreen .title-copy{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;max-width:760px;padding:calc(22px + var(--safe-t)) clamp(18px,4vw,36px) calc(22px + var(--safe-b));}
+.title-brand{width:min(540px,92vw);border-radius:22px;overflow:hidden;box-shadow:0 18px 50px rgba(28,5,55,.28);border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.1)}
+.title-brand img{display:block;width:100%;height:auto}
+#titleScreen .eyebrow{color:#2f0a67}
+#titleScreen h1{color:#2f0a67;text-shadow:none}
+#titleScreen .subtitle{max-width:32ch;margin:0 0 10px;color:#2f0a67;font-weight:800}
+#titleScreen .play-button{background:linear-gradient(135deg,#2f0a67,#4d1593);color:#84e7c4;box-shadow:0 18px 40px rgba(35,7,75,.28)}
+#titleScreen .play-button small{color:#c7f6e3}
+#titleScreen .text-button{color:#2f0a67;background:rgba(255,255,255,.28);border-radius:12px;padding:10px 14px}
+#titleScreen .version{color:#3b1a67;font-weight:700}
+#titleScreen .title-tools{flex-wrap:wrap;justify-content:center}
+.brief-goal,.brief-why{border:1px solid var(--line);border-radius:14px;padding:13px;margin:14px 0;background:rgba(255,255,255,.035)}
+.brief-why span{display:block;color:var(--gold);font-size:9px;letter-spacing:.14em;font-weight:1000}
+.brief-why p{margin:6px 0 0;color:#d4ddd7;line-height:1.45}
+.boss-label{position:absolute;pointer-events:none}
+@media(max-width:760px){
+  #titleScreen{display:none;grid-template-columns:1fr!important;background:linear-gradient(180deg,var(--brandPurple) 0 27%,var(--brandMint) 27% 100%)!important}
+  #titleScreen.visible{display:grid}
+  .title-brand{width:min(460px,94vw);border-radius:18px}
+  #titleScreen .title-copy h1{font-size:clamp(56px,16vw,84px)}
+}
+
+
+/* v5.3 — Besednice + HUD + character readability */
+.mission-pill{backdrop-filter:blur(10px)}
+.action-button.ready{box-shadow:0 0 0 10px rgba(99,228,155,.1),0 12px 34px rgba(0,0,0,.36)}
+.boss-hud{box-shadow:0 10px 26px rgba(0,0,0,.32)}
+.hint{background:rgba(8,20,14,.88)}
+
+
+/* v5.4 — Besednice finale, robbery alert, richer character/boss presentation */
+.robbery-alert{position:absolute;z-index:40;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);width:min(760px,calc(100vw - 28px));padding:26px 24px 28px;text-align:center;background:linear-gradient(100deg,rgba(20,5,10,.18),rgba(70,10,22,.97) 16%,rgba(42,6,18,.98) 84%,rgba(20,5,10,.18));border-top:2px solid #ff6778;border-bottom:2px solid #ff6778;box-shadow:0 30px 100px rgba(0,0,0,.78),0 0 70px rgba(217,39,73,.26);opacity:0;pointer-events:none;transition:opacity .18s,transform .18s}
+.robbery-alert.show{opacity:1;transform:translate(-50%,-50%) scale(1);animation:robberyShake .12s linear 4}
+.robbery-alert small{display:block;color:#ff9aa7;font-size:9px;letter-spacing:.28em;font-weight:1000}
+.robbery-alert strong{display:block;margin-top:8px;color:#fff;font-size:clamp(28px,8vw,62px);line-height:.92;letter-spacing:-.045em;text-shadow:0 8px 26px rgba(0,0,0,.8)}
+.robbery-alert span{display:block;margin:12px auto 0;max-width:52ch;color:#ffd6da;font-size:12px;line-height:1.4}
+.robbery-stripe{height:4px;margin-bottom:16px;background:repeating-linear-gradient(90deg,#ffd05f 0 22px,#45101c 22px 44px);box-shadow:0 0 24px rgba(255,197,73,.35)}
+@keyframes robberyShake{25%{transform:translate(calc(-50% - 5px),-50%) scale(1.01)}75%{transform:translate(calc(-50% + 5px),-50%) scale(1.01)}}
+.boss-hud{border-width:2px}.boss-hud.enraged{transform:translateX(-50%) scale(1.015)}
+.action-button.ready{box-shadow:0 0 0 9px rgba(99,228,155,.13),0 0 34px rgba(99,228,155,.22),0 13px 34px rgba(0,0,0,.42)}
+.mission-panel{box-shadow:0 10px 30px rgba(0,0,0,.38)}
+@media(max-width:520px){.robbery-alert{padding:22px 15px 24px}.robbery-alert span{font-size:11px}}
