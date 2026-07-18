@@ -1,5 +1,17 @@
-Lovec vltavínů Reborn 5.5
-- JS syntax: OK
-- SW cache: v5-5
-- Intro reverted: yes
-- Gameplay visibility fixes: yes
+Lovec vltavínů Reborn 5.4
+
+VALIDATION
+HTML element references: OK
+robbery alert HTML: OK
+robbery function: OK
+robbery called after profile: OK
+three boss phases: OK
+boss dash: OK
+stolen gem visible: OK
+player after darkness: OK
+player excluded from world sorting: OK
+robbery CSS: OK
+cache v5-4: OK
+Audio tracks validated: 5
+Build size: 8968533 B
+Overall static validation: OK
