@@ -1,0 +1,14 @@
+Lovec vltavínů: Zelená vlna — GitHub repository package
+
+Počet souborů: 20
+Celková velikost: 8,917,292 B
+HTML lokální odkazy: OK
+Service worker assety: OK
+GitHub Pages workflow: přítomen
+
+Hudební soubory:
+- city.wav: 1 kanál, 16 bit, 16000 Hz, 41.00 s
+- field.wav: 1 kanál, 16 bit, 16000 Hz, 61.00 s
+- forest.wav: 1 kanál, 16 bit, 16000 Hz, 66.62 s
+- meadow.wav: 1 kanál, 16 bit, 16000 Hz, 29.80 s
+- night.wav: 1 kanál, 16 bit, 16000 Hz, 76.00 s
